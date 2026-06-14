@@ -18,10 +18,10 @@ public:
     Developer() {
         name = "dbswnstj";
         role = "Backend & System Developer";
-        languages = {"C", "C++", "C#", "Python", "Java", "JavaScript"};
+        languages = {"C", "C#", "Python", "JavaScript"};
         frameworks = {"FastAPI", "Unity"};
         interests = {"Backend Development", "System Programming", "Game Development"};
-        currently_learning = {"Advanced C++", "FastAPI", "Web Technologies"};
+        currently_learning = {"FastAPI", "Web Technologies"};
     }
     
     void sayHi() {
