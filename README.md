@@ -1,95 +1,89 @@
 <div align="center">
 
-# nanjjang
+![header](https://capsule-render.vercel.app/api?type=waving&height=220&color=0:141E30,50:243B55,100:58A6FF&text=nanjjang&fontColor=ffffff&fontSize=56&fontAlignY=38&desc=Backend%20%2F%20Web%20%2F%20App&descAlignY=58&animation=fadeIn)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=620&lines=Backend+%2F+Web+%2F+App;Python+%7C+TypeScript+%7C+Swift+%7C+Svelte;Building+small+things+that+actually+work)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=2500&pause=900&color=58A6FF&center=true&vCenter=true&width=720&lines=Python+backend+%7C+Svelte+web+%7C+Swift+app;I+build+small+tools+and+learn+by+shipping;FastAPI+%2F+TypeScript+%2F+Unity+%2F+C%23)](https://git.io/typing-svg)
 
 <p>
   <a href="https://github.com/nanjjang">
-    <img src="https://img.shields.io/badge/GitHub-nanjjang-181717?style=flat-square&logo=github&logoColor=white" />
+    <img src="https://img.shields.io/badge/GitHub-nanjjang-181717?style=for-the-badge&logo=github&logoColor=white" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=nanjjang&style=flat-square&color=58a6ff" />
-  <img src="https://img.shields.io/github/followers/nanjjang?style=flat-square&label=Followers&color=58a6ff" />
-  <img src="https://img.shields.io/github/stars/nanjjang?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&label=Stars&color=58a6ff" />
+  <img src="https://komarev.com/ghpvc/?username=nanjjang&style=for-the-badge&color=58a6ff" />
+  <img src="https://img.shields.io/github/followers/nanjjang?style=for-the-badge&label=Followers&color=58a6ff" />
+  <img src="https://img.shields.io/github/stars/nanjjang?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&label=Stars&color=58a6ff" />
 </p>
-
-Backend / Web / App 개발을 공부하고 있습니다.
 
 </div>
 
 ---
 
-## About
+```text
+booting profile...
 
-- Python, TypeScript, Swift, Svelte를 사용합니다.
-- FastAPI 기반 서버와 Svelte 웹 프로젝트를 자주 만집니다.
-- Unity와 C#으로 게임 프로젝트도 만들어봤습니다.
+user      nanjjang
+mode      student developer
+stack     Python / TypeScript / Swift / Svelte
+interest  backend, web, app, automation, game dev
+status    building, breaking, fixing, learning
+```
+
+## Now
+
+- 공학/산업 분야 대회 프로젝트를 개발 중입니다.
+- FastAPI 서버, Svelte 웹, Swift 앱을 주로 만집니다.
 - 필요한 기능을 직접 만들어보면서 공부합니다.
+- 작게 시작해서 실제로 굴러가는 결과물을 만드는 걸 좋아합니다.
 
-## Stack
+## Tech Orbit
 
 <div align="center">
 
-### Languages
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/Swift-F05138?style=for-the-badge&logo=swift&logoColor=white" />
-  <img src="https://img.shields.io/badge/Svelte-FF3E00?style=for-the-badge&logo=svelte&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" />
-</p>
-
-### Tools
-
-<p>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Unity-000000?style=for-the-badge&logo=unity&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-</p>
+<img src="https://skillicons.dev/icons?i=python,ts,swift,svelte,html,css,fastapi,git,github,unity,cs,vscode&perline=6" />
 
 </div>
 
-## Projects
+## Project Console
 
 <div align="center">
 
 <a href="https://github.com/nanjjang/AOT">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=AOT&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
-</a>
-<a href="https://github.com/nanjjang/uhak-web">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=uhak-web&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=AOT&theme=github_dark&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
 </a>
 <a href="https://github.com/nanjjang/2026-Engineering-Industry-Contest">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=2026-Engineering-Industry-Contest&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=2026-Engineering-Industry-Contest&theme=github_dark&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
 </a>
-<a href="https://github.com/nanjjang/ActionGame_3D_Unity_QuarterView">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=ActionGame_3D_Unity_QuarterView&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
+<a href="https://github.com/nanjjang/uhak-web">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=uhak-web&theme=github_dark&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
+</a>
+<a href="https://github.com/nanjjang/digital_mental_medicalAI">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=nanjjang&repo=digital_mental_medicalAI&theme=github_dark&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
 </a>
 
 </div>
 
-## Focus
+## Build Map
 
-```text
-backend   FastAPI, API design, automation
-web       Svelte, TypeScript, HTML/CSS
-app       Swift, iOS experiments
-game      Unity, C#
-```
+| Area | Tools | Projects |
+| --- | --- | --- |
+| Backend | Python, FastAPI | API, automation, utilities |
+| Web | Svelte, TypeScript, HTML/CSS | dashboards, service pages |
+| App | Swift | iOS experiments |
+| Game | Unity, C# | 3D action game, small prototypes |
 
-## Stats
+## GitHub Lab
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=nanjjang&show_icons=true&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nanjjang&layout=compact&hide_border=true&title_color=58A6FF" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=nanjjang&show_icons=true&theme=github_dark&hide_border=true&title_color=58A6FF&icon_color=58A6FF" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=nanjjang&layout=compact&theme=github_dark&hide_border=true&title_color=58A6FF" />
 
 <br />
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=nanjjang&theme=github-compact&hide_border=true&area=true&color=58A6FF&line=58A6FF&point=58A6FF" />
+<img src="https://streak-stats.demolab.com?user=nanjjang&theme=github-dark-blue&hide_border=true&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" />
+
+<br />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=nanjjang&theme=github-compact&hide_border=true&area=true&color=58A6FF&line=58A6FF&point=FFFFFF" />
 
 </div>
 
@@ -97,6 +91,6 @@ game      Unity, C#
 
 <div align="center">
 
-<sub>github.com/nanjjang</sub>
+![footer](https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:58A6FF,100:141E30)
 
 </div>
