@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>nanjjang · 3D particle universe</title>
+<meta name="description" content="An interactive 3D particle universe by nanjjang. Move the mouse, click, drag.">
+<meta name="theme-color" content="#03040a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3CradialGradient id='g' cx='38%25' cy='32%25' r='75%25'%3E%3Cstop offset='0' stop-color='%23fff'/%3E%3Cstop offset='.5' stop-color='%235f86ff'/%3E%3Cstop offset='1' stop-color='%231a1f7a'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='%2303040a'/%3E%3Ccircle cx='16' cy='16' r='8' fill='url(%23g)'/%3E%3Cellipse cx='16' cy='16' rx='13' ry='4.5' fill='none' stroke='%23a07dff' stroke-width='1.2' transform='rotate(-18 16 16)'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://nanjjang.github.io/nanjjang/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:title" content="nanjjang · 3D particle universe">
+<meta property="og:description" content="Galaxy ⇄ NANJJANG. ~90,000 particles, real-time WebGL.">
+<style>
+  :root { color-scheme: dark; --ui: #9fb3d9; --hi: #58a6ff; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: #03040a; overflow: hidden; }
+  canvas#gl { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: crosshair; }
+  html.capture .ui { display: none !important; }
+
+  .ui { position: fixed; z-index: 2; font: 500 12px/1.4 ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace; color: var(--ui); letter-spacing: .04em; user-select: none; }
+  .brand { top: max(18px, env(safe-area-inset-top)); left: 22px; display: flex; gap: 10px; align-items: center; }
+  .brand a { color: #e6edf3; text-decoration: none; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .brand a:hover { color: var(--hi); }
+  .brand i { width: 8px; height: 8px; border-radius: 50%; background: var(--hi); box-shadow: 0 0 14px 2px var(--hi); animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .35; transform: scale(.7); } }
+
+  .dock { left: 50%; bottom: max(22px, env(safe-area-inset-bottom)); transform: translateX(-50%); display: flex; gap: 6px; padding: 6px; border-radius: 999px;
+          background: rgba(10, 14, 30, .55); border: 1px solid rgba(120, 150, 255, .18); backdrop-filter: blur(14px) saturate(1.4); -webkit-backdrop-filter: blur(14px) saturate(1.4); }
+  .dock button { all: unset; cursor: pointer; padding: 8px 14px; border-radius: 999px; color: var(--ui); font: inherit; text-transform: uppercase; transition: background .2s, color .2s; }
+  .dock button:hover { color: #fff; background: rgba(120, 150, 255, .16); }
+  .dock button.on { color: #04060d; background: var(--hi); }
+  .dock button:focus-visible { outline: 2px solid var(--hi); outline-offset: 2px; }
+
+  .hint { right: 22px; bottom: max(30px, env(safe-area-inset-bottom)); text-align: right; opacity: .55; }
+  .fps { top: max(18px, env(safe-area-inset-top)); right: 22px; opacity: .4; }
+  @media (max-width: 720px) { .hint { display: none; } .dock button { padding: 8px 11px; } }
+  .nogl { position: fixed; inset: 0; display: none; place-items: center; text-align: center; padding: 32px; color: var(--ui); font: 14px/1.6 ui-monospace, monospace; }
+</style>
+<script>
+  // Dependency resolution: local dev server (/_deps) when on localhost, pinned jsDelivr otherwise.
+  (() => {
+    const V = { three: '0.187.0', unbounded: '5.3.0', jbmono: '5.3.0' };
+    const local = ['localhost', '127.0.0.1'].includes(location.hostname) && !new URLSearchParams(location.search).has('cdn');
+    const cdn = 'https://cdn.jsdelivr.net/npm/';
+    const three = local ? '/_deps/three/' : `${cdn}three@${V.three}/`;
+    const font = (pkg, ver) => (local ? `/_deps/@fontsource/${pkg}/files/` : `${cdn}@fontsource/${pkg}@${ver}/files/`);
+    window.__DEPS = { V, fonts: { unbounded: font('unbounded', V.unbounded), jbmono: font('jetbrains-mono', V.jbmono) } };
+    const im = document.createElement('script');
+    im.type = 'importmap';
+    im.textContent = JSON.stringify({
+      imports: {
+        three: three + (local ? 'build/three.module.js' : 'build/three.module.min.js'),
+        'three/addons/': three + 'examples/jsm/',
+      },
+    });
+    document.head.appendChild(im);
+    if (new URLSearchParams(location.search).has('capture')) document.documentElement.classList.add('capture');
+  })();
+</script>
+</head>
+<body>
+<canvas id="gl" aria-label="Interactive 3D particle universe"></canvas>
+
+<div class="ui brand"><i></i><a href="https://github.com/nanjjang">nanjjang</a><span>/ particle universe</span></div>
+<div class="ui fps" id="fps"></div>
+<div class="ui dock" id="dock" role="toolbar" aria-label="Scene">
+  <button data-mode="auto" class="on">auto</button>
+  <button data-mode="title">title</button>
+  <button data-mode="galaxy">galaxy</button>
+</div>
+<div class="ui hint">move · click to blast · drag to orbit</div>
+<div class="nogl" id="nogl">WebGL is not available in this browser.<br>Try a recent Chrome, Edge, Firefox or Safari.</div>
+
+<script type="module" src="./scene.js"></script>
+</body>
+</html>
