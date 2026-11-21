@@ -17,6 +17,10 @@
 
 ---
 
+<div align="center">
+  <img src="./assets/dashboard.svg" alt="terminal dashboard" width="100%" />
+</div>
+
 ```text
 booting profile...
 
@@ -26,6 +30,15 @@ stack     Python / TypeScript / Swift / Svelte
 interest  backend, web, app, automation, game dev
 status    building, breaking, fixing, learning
 ```
+
+## About Me
+
+> 아이디어를 **실제로 동작하는 서비스**로 만드는 학생 개발자입니다.
+> 백엔드부터 웹·앱까지 직접 설계하고, 배포까지 끝내는 것을 목표로 합니다.
+
+| 🎯 Focus | ⚡ Strength | 🌱 Learning |
+| :---: | :---: | :---: |
+| Backend API & Automation | 빠른 프로토타이핑 → 실서비스 | System Design · Cloud · AI |
 
 ## Now
 
@@ -84,6 +97,30 @@ status    building, breaking, fixing, learning
 <br />
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=nanjjang&theme=github-compact&hide_border=true&area=true&color=58A6FF&line=58A6FF&point=FFFFFF" />
+
+<br />
+
+<img src="https://github-profile-trophy.vercel.app/?username=nanjjang&theme=onedark&no-frame=true&no-bg=true&margin-w=6&column=7" />
+
+</div>
+
+## Contribution Snake
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nanjjang/nanjjang/output/github-snake-dark.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/nanjjang/nanjjang/output/github-snake.svg" />
+</picture>
+
+</div>
+
+## Contact
+
+<div align="center">
+
+<a href="https://github.com/nanjjang"><img src="https://img.shields.io/badge/Open%20to-Collaboration-58A6FF?style=for-the-badge&logo=handshake&logoColor=white" /></a>
+<a href="https://github.com/nanjjang?tab=repositories"><img src="https://img.shields.io/badge/Explore-Repositories-243B55?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 </div>
 
