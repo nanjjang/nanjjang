@@ -1,0 +1,64 @@
+{
+  "_": "손으로 고치는 내용. line은 한 줄짜리 라벨, tag는 오른쪽 위 한 마디(live가 있으면 주소가 대신 들어간다). 언어, 날짜, 주별 막대는 여기 적지 않는다. scripts/build.py가 GitHub API에서 읽는다.",
+  "projects": [
+    {
+      "repo": "repogram",
+      "name": "repogram",
+      "line": "VS Code 확장 · 구조와 호출 흐름 시각화",
+      "tag": "PREVIEW"
+    },
+    {
+      "repo": "SSSMS",
+      "name": "SSSMS",
+      "line": "야간자율학습실 관리 · 얼굴 인식 출석",
+      "tag": "NO NPM PACKAGES"
+    },
+    {
+      "repo": "blog",
+      "name": "devlog",
+      "line": "여럿이 쓰는 블로그 · 집 맥미니에서 운영",
+      "live": "devlog.yoonjunseo.com"
+    },
+    {
+      "repo": "digital_mental_medicalAI",
+      "name": "Digital Mental Care",
+      "line": "정신건강 케어 · SvelteKit + FastAPI",
+      "tag": "TEAM OF 2"
+    },
+    {
+      "repo": "uhak-web",
+      "name": "우학",
+      "line": "학교 웹 서비스 · Next.js + Firebase",
+      "live": "uhak-web.vercel.app"
+    },
+    {
+      "repo": "metroVoca",
+      "name": "metroVoca",
+      "line": "지하철 통학용 단어 앱 · React Native",
+      "tag": "IN PROGRESS"
+    }
+  ],
+  "records": [
+    {
+      "label": "PAPER · 2026",
+      "items": [
+        "한국정보기술진흥원 학술지 3권 1호"
+      ]
+    },
+    {
+      "label": "AWARDS · 2026",
+      "items": [
+        "논문대회 은상",
+        "엔지니어링산업대회 장려상"
+      ]
+    },
+    {
+      "label": "LIVE",
+      "items": [
+        "yoonjunseo.com",
+        "devlog",
+        "우학"
+      ]
+    }
+  ]
+}
