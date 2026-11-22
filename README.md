@@ -1,6 +1,6 @@
 <img src="./assets/profile.svg" width="100%" alt="nanjjang. 지난 1년의 기여를 하루에 선 하나씩 그린 그림." />
 
-### 게임에서 시작해 서버까지 내려간 고등학생 개발자
+### 고등학생 개발자
 
 윤준서 · 선린인터넷고 [AnA](https://github.com/sunrin-ana) · [yoonjunseo.com](https://yoonjunseo.com) · [devlog](https://devlog.yoonjunseo.com) · [논문](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12579652)
 
